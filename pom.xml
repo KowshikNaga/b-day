@@ -49,7 +49,7 @@
     </pluginRepositories>
 
     <build>
-        <finalName>myweb</finalName>
+        <finalName>AFS-file</finalName>
         <plugins>
             <!-- Use modern WAR plugin -->
             <plugin>
