@@ -1,0 +1,488 @@
+1. AWS Cloud Migration Questions
+Basic to Intermediate
+Explain a cloud migration project you have worked on.
+What are the different migration strategies (6 Rs)?
+How do you assess whether an application is ready for cloud migration?
+What factors do you consider during workload discovery?
+How do you calculate cloud resource sizing from an on-prem server?
+How do you determine whether to migrate to ECS, EKS, EC2, or Lambda?
+What challenges have you faced during on-prem to AWS migration?
+How do you handle dependencies between applications during migration?
+What is a pilot migration?
+Explain a cutover strategy you have implemented.
+Scenario-Based
+A business-critical application cannot have more than 5 minutes downtime. How would you plan the migration?
+An application performs well on-prem but becomes slow after migration. How would you troubleshoot?
+CPU utilization was 30% on-prem but 85% on AWS after migration. What could be the reasons?
+What rollback strategy would you define before production migration?
+How would you migrate a legacy monolithic application to AWS?
+2. AWS Services Questions
+ECS & EKS
+What is Amazon ECS?
+Difference between ECS and EKS?
+When would you choose ECS over EKS?
+Explain ECS task, service, and cluster.
+What is a Kubernetes Pod?
+How do services communicate within EKS?
+What are ConfigMaps and Secrets?
+How do you troubleshoot a pod in CrashLoopBackOff?
+Lambda
+What are AWS Lambda limitations?
+Explain a use case where Lambda is better than EC2.
+How do you monitor Lambda performance?
+What causes cold starts?
+CloudWatch
+What metrics do you monitor in CloudWatch?
+Difference between CloudWatch Logs and CloudTrail?
+How would you create alerts for production workloads?
+General AWS
+Explain the difference between Security Groups and NACLs.
+What is an Auto Scaling Group?
+How does Load Balancer health checking work?
+Explain Route 53 failover routing.
+How do you secure workloads running in AWS?
+3. Linux/Unix Questions
+How do you identify a high CPU process in Linux?
+Explain the use of:
+top
+ps
+netstat
+grep
+awk
+sed
+How do you troubleshoot a server running out of memory?
+Difference between hard link and soft link?
+How do you find files modified in the last 24 hours?
+Explain Linux process states.
+What happens during server startup?
+How do you monitor disk utilization?
+Practical
+Application is not starting after deployment. How would you troubleshoot?
+A service port is inaccessible. What steps would you follow?
+System load average is high. What does that indicate?
+4. Python & Automation Questions
+Describe an automation script you developed.
+How would you automate server inventory collection?
+How do you read a JSON file in Python?
+Difference between list and tuple?
+What are Python decorators?
+What are generators?
+Explain multithreading vs multiprocessing.
+How do you handle exceptions in Python?
+Write a script to check disk usage and send an alert.
+How would you automate AWS resource creation using Python?
+Scenario
+You need to migrate 500 servers. How would automation help?
+How would you generate migration reports automatically?
+5. CI/CD Questions
+Explain your CI/CD process.
+What stages are present in a Jenkins pipeline?
+Difference between CI and CD?
+Explain Declarative vs Scripted Pipeline.
+How do you secure Jenkins credentials?
+What is a Git branching strategy?
+Have you implemented GitLab CI/CD?
+Explain blue-green deployment.
+Explain canary deployment.
+How do you rollback a failed deployment?
+Practical
+Production deployment failed midway. What will you do?
+How do you ensure deployment quality before production release?
+6. Kubernetes Questions
+Explain Kubernetes architecture.
+What is the role of:
+API Server
+Scheduler
+Controller Manager
+etcd
+Difference between Deployment and StatefulSet?
+What is an Ingress Controller?
+How does autoscaling work in Kubernetes?
+What is HPA?
+How do rolling updates work?
+How do you troubleshoot Kubernetes networking issues?
+Scenario
+Pods keep restarting after deployment. What could be the reasons?
+An application is inaccessible despite healthy pods. How would you investigate?
+7. Monitoring & Observability Questions
+What monitoring tools have you used?
+Explain your experience with CloudWatch and Splunk.
+Difference between monitoring and observability?
+How do you identify memory leaks?
+What metrics are most important for application health?
+What is log aggregation?
+What is distributed tracing?
+Scenario
+Users report slowness but CPU and memory are normal. How would you investigate?
+How would you identify the root cause of intermittent failures?
+8. REST API Questions
+What are REST APIs?
+Difference between PUT and PATCH?
+Difference between POST and PUT?
+What is idempotency?
+What HTTP status codes are commonly used?
+How do you secure APIs?
+What is API Gateway?
+Practical
+How would you troubleshoot a 500 Internal Server Error?
+API response latency suddenly increased. How would you investigate?
+9. Batch Scheduling Questions
+Have you worked with Cron, Control-M, or Autosys?
+How do you troubleshoot failed batch jobs?
+What is dependency management in scheduling tools?
+How would you ensure critical jobs never miss execution?
+10. Performance Tuning Questions
+How do you conduct performance testing after migration?
+What performance metrics do you compare between source and target environments?
+How do you tune JVM-based applications?
+What causes application latency?
+How do you identify infrastructure bottlenecks?
+Scenario
+Migration succeeded but performance degraded by 40%. What would you check first?
+11. Behavioral & Ownership Questions
+Describe a migration project you led.
+Tell us about a critical production issue you resolved.
+Describe a situation where rollout needed rollback.
+How do you manage stakeholder expectations during migration?
+Have you ever disagreed with a migration approach? What did you do?
+How do you prioritize tasks in a high-pressure release window?
+Tell us about a time you automated a manual process.
+How do you handle multiple production incidents simultaneously?
+Describe a situation where you identified a risk others missed.
+Why do you want to join this Cloud Migration Engineering role?
+Must-Prepare Questions (Most Likely)
+
+If this is an enterprise AWS migration role, these are the top 15 questions most likely to be asked:
+
+Explain an end-to-end cloud migration project.
+How do you perform workload assessment?
+ECS vs EKS vs EC2 vs Lambda.
+Migration strategies (6Rs).
+Production cutover and rollback planning.
+CloudWatch monitoring and alerting.
+Troubleshooting application slowness after migration.
+Jenkins CI/CD pipeline design.
+Kubernetes architecture and deployment.
+Linux troubleshooting scenarios.
+Python automation examples.
+Performance validation after migration.
+AWS security best practices.
+Handling production incidents during migration.
+Decommissioning legacy on-prem servers.
+
+Preparing solid STAR-format answers for these 15 questions along with hands-on AWS and Kubernetes examples will cover roughly 80-90% of the interview discussions for a 4-year AWS Cloud Migration Engineer role.
+
+Provide your feedback on BizChat
+You said:
+Generate STAR-format answers for top 15 questions.
+Copilot said:
+
+For a 4-year AWS Cloud Migration Engineer, interviewers expect concise but practical examples demonstrating ownership, troubleshooting, automation, and migration experience. Below are STAR-format answers you can adapt with your own project details.
+
+1. Explain an End-to-End Cloud Migration Project
+Situation
+
+Our organization needed to migrate a business-critical document management application from on-premises servers to AWS to reduce infrastructure costs and improve scalability.
+
+Task
+
+I was responsible for workload assessment, migration planning, environment provisioning, validation, and production cutover.
+
+Action
+Conducted server discovery using monitoring tools and Linux commands.
+Identified dependencies between application, database, and batch jobs.
+Designed AWS architecture using ECS, ALB, CloudWatch, and RDS.
+Automated deployment through Jenkins pipelines.
+Executed parallel testing in UAT.
+Coordinated production cutover and rollback plan.
+Result
+Migrated 20+ servers with zero critical incidents.
+Reduced infrastructure costs by approximately 30%.
+Improved deployment speed from 2 hours to 20 minutes.
+2. How Do You Perform Workload Assessment?
+Situation
+
+Before migrating legacy applications, leadership needed accurate cloud sizing and migration readiness analysis.
+
+Task
+
+Assess server utilization, dependencies, and business criticality.
+
+Action
+Collected CPU, Memory, Disk, and Network metrics.
+Analyzed application logs and peak usage trends.
+Identified batch jobs and downstream integrations.
+Categorized applications by criticality.
+Recommended EC2 and ECS sizing based on utilization trends.
+Result
+Prevented overprovisioning.
+Achieved nearly 25% optimized AWS resource allocation.
+Improved migration planning accuracy.
+3. ECS vs EKS vs EC2 vs Lambda
+Situation
+
+A team wanted guidance on selecting the right AWS compute platform.
+
+Task
+
+Recommend the most suitable service.
+
+Action
+Evaluated application architecture and operational requirements.
+Recommended:
+EC2 for legacy applications.
+ECS for simple containerized workloads.
+EKS for microservices requiring Kubernetes.
+Lambda for event-driven processing.
+Result
+Selected ECS for the migration project.
+Reduced operational overhead compared to self-managed Kubernetes.
+Accelerated onboarding and deployment timelines.
+4. Explain Migration Strategies (6Rs)
+Situation
+
+Different applications required different migration approaches.
+
+Task
+
+Determine migration strategy for each workload.
+
+Action
+
+Applied:
+
+Rehost (Lift & Shift)
+Replatform
+Refactor
+Repurchase
+Retain
+Retire
+
+For example:
+
+Legacy Java application → Rehost.
+Stateless APIs → Replatform into containers.
+Unused applications → Retire.
+Result
+Reduced migration complexity.
+Avoided unnecessary modernization efforts.
+Improved project timelines.
+5. Production Cutover and Rollback Planning
+Situation
+
+A customer-facing application was scheduled for production migration.
+
+Task
+
+Ensure minimal downtime and safe recovery.
+
+Action
+Defined pre-cutover checklist.
+Conducted parallel testing.
+Created database backup and AMI snapshots.
+Prepared DNS rollback strategy.
+Obtained stakeholder approvals.
+Result
+Migration completed within maintenance window.
+No customer impact.
+Rollback plan was not required but validated successfully.
+6. CloudWatch Monitoring and Alerting
+Situation
+
+After migration, application visibility was limited.
+
+Task
+
+Implement proactive monitoring.
+
+Action
+Configured CloudWatch metrics.
+Created alarms for CPU, memory, response time, and disk usage.
+Integrated CloudWatch with SNS notifications.
+Centralized logs for troubleshooting.
+Result
+Reduced incident detection time from hours to minutes.
+Improved system availability.
+Enabled proactive support model.
+7. Troubleshooting Application Slowness After Migration
+Situation
+
+Users reported slower performance after migration.
+
+Task
+
+Identify root cause and restore performance.
+
+Action
+Compared on-prem and AWS performance metrics.
+Investigated CPU, memory, network latency, and database wait times.
+Found new EBS volume type had lower throughput.
+Upgraded storage configuration.
+Tuned JVM memory settings.
+Result
+Response time improved by nearly 40%.
+User complaints stopped.
+Application performance exceeded previous baseline.
+8. Jenkins CI/CD Pipeline Design
+Situation
+
+Deployments were manually executed and error-prone.
+
+Task
+
+Automate build and deployment process.
+
+Action
+
+Created Jenkins pipeline stages:
+
+Source checkout
+Build using Maven
+Unit testing
+Security scans
+Docker image creation
+Deployment to ECS
+Post-deployment validation
+Result
+Reduced deployment effort by 80%.
+Improved release consistency.
+Increased deployment frequency significantly.
+9. Kubernetes Architecture and Deployment
+Situation
+
+Applications were moving toward containerized deployments.
+
+Task
+
+Support Kubernetes-based deployments.
+
+Action
+Managed deployments through EKS.
+Configured:
+Deployments
+Services
+ConfigMaps
+Secrets
+HPA
+Used rolling deployment strategy.
+Monitored pod health and resource consumption.
+Result
+Achieved near-zero downtime deployments.
+Improved scalability.
+Reduced operational issues.
+10. Linux Troubleshooting Scenario
+Situation
+
+Production application became inaccessible.
+
+Task
+
+Identify and fix the issue quickly.
+
+Action
+Checked service status.
+Reviewed application logs.
+Verified disk space using df -h.
+Examined system utilization using top.
+Found disk partition reached 100%.
+Result
+Cleared old log files.
+Service restored within 30 minutes.
+Implemented log rotation to prevent recurrence.
+11. Python Automation Example
+Situation
+
+Server inventory collection was a manual process.
+
+Task
+
+Automate inventory gathering across environments.
+
+Action
+Developed Python script using AWS SDK (Boto3).
+Collected EC2 metadata, CPU, tags, and environment details.
+Generated automatic CSV reports.
+Scheduled execution through Jenkins.
+Result
+Reduced reporting effort from several hours to a few minutes.
+Improved accuracy.
+Supported migration planning activities.
+12. Performance Validation After Migration
+Situation
+
+Business wanted assurance that migration did not impact performance.
+
+Task
+
+Validate workload performance before production sign-off.
+
+Action
+Executed load testing in UAT.
+Compared:
+CPU
+Memory
+Response times
+Throughput
+Analyzed application logs and database performance.
+Addressed identified bottlenecks.
+Result
+Met all SLA requirements.
+Received production approval.
+Achieved successful migration with stable performance.
+13. AWS Security Best Practices
+Situation
+
+Migration involved sensitive business data.
+
+Task
+
+Implement secure AWS deployment model.
+
+Action
+Applied least-privilege IAM policies.
+Enabled encryption at rest and in transit.
+Used Security Groups and NACLs.
+Stored secrets in AWS Secrets Manager.
+Enabled CloudTrail auditing.
+Result
+Passed security review without major findings.
+Achieved compliance requirements.
+Improved overall security posture.
+14. Handling Production Incidents During Migration
+Situation
+
+During migration testing, application APIs started failing intermittently.
+
+Task
+
+Restore service availability and identify root cause.
+
+Action
+Gathered logs from CloudWatch and Splunk.
+Checked recent deployment changes.
+Found database connection pool exhaustion.
+Increased pool size and optimized timeout settings.
+Conducted regression testing.
+Result
+Service stabilized quickly.
+Prevented production outage.
+Implemented dashboard monitoring to detect future issues.
+15. Legacy Host Decommissioning
+Situation
+
+After successful migration, on-prem servers remained active.
+
+Task
+
+Safely retire legacy infrastructure.
+
+Action
+Verified all workloads were running in AWS.
+Conducted dependency validation with application teams.
+Archived logs and backups.
+Updated CMDB and documentation.
+Coordinated infrastructure shutdown.
+Result
+Decommissioned 15+ servers safely.
+Eliminated unnecessary infrastructure costs.
+Reduced operational maintenance burden.
